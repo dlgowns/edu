@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.empmanage.sawon.service.dao.TelLoginDAO">
+<select id="memberLogin" resultType="TelLoginVO">
+	SELECT * FROM TELTABLE55_MEMBER WHERE id=#{id} AND pw=#{pw}
+</select>
+
+<select id="memberMypage" resultType="TelLoginVO">
+  SELECT * FROM TELTABLE55_MEMBER WHERE id=#{id}
+</select>
+
+<insert id="memberInsert">
+INSERT INTO TELTABLE55_MEMBER VALUES (#{id},#{pw})
+</insert>
+
+<update id="memberUpdate">
+UPDATE TELTABLE55_MEMBER SET pw=#{pw} WHERE id=#{id}
+</update>
+
+<delete id="memberDelete">
+DELETE FROM TELTABLE55_MEMBER WHERE id=#{id}
+</delete>
+</mapper>

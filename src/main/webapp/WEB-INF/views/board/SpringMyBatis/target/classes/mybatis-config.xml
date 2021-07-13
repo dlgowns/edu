@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="sawonVO" type="com.empmanage.sawon.vo.SawonVO"/><!-- vo 별명 만들어서 간편하게 사용하기 -->
+		<typeAlias alias="telLoginVO" type="com.empmanage.sawon.vo.TelLoginVO"/>
+	</typeAliases>
+</configuration>
+
+
